@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Lorem Ipsum</p>
+  <form id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">Name: <input id="name" type="text" name="name" placeholder="Name" required/></label>
+      <label for="email" id="email-label">Email: <input id="email" type="email" name="email" placeholder="Email" required/></label>
+      <label for="number" id="number-label">Rating 1-5: <input id="number" type="number" name="number" min="0" max="5" placeholder="5"/></label>
+    </fieldset>
+    <fieldset>
+      <select id="dropdown">
+        <option value="">(select one)</option>
+        <option value="1">A</option>
+        <option value="2">B</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Radio Buttons</legend>
+        <label for="A"><input id="choice1" type="radio" name="radiobtn" value="A" checked /> A</label>
+        <label for="B"><input id="choice2" type="radio" name="radiobtn" value="B"/> B</label>
+    </fieldset>
+    <fieldset>
+      <legend>A, B, or C?</legend>
+      <input id="Aa" type="checkbox" name="Aa" value="Aa" checked> <label for="Aa">Aa</label>
+      <input id="Bb" type="checkbox" name="Bb" value="Bb"> <label for="Bb">Bb</label>
+      <input id="Cc" type="checkbox" name="Cc" value="Cc"> <label for="Cc">Cc</label>
+      <label for="why">Why did you pick that one?
+        <textarea id="why" name="why" rows="3" cols="30" placeholder="Because...">
+        </textarea>
+      </label>
+    </fieldset>
+    <input type="submit" value="Submit" id="submit"/>
+  </form>
+</body>
